@@ -1,0 +1,13 @@
+div.container {
+  background: #e3fbf5;
+  line-height: 1.6;
+  color: #303e4e;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+div.navigation {
+  text-align: center;
+  margin: 20px;
+}
