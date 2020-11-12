@@ -1,6 +1,7 @@
 div.wrapper {
   color: #303e4e;
   line-height: 2;
+  font-family: "Raleway", sans-serif;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -14,6 +15,32 @@ h1 {
   text-decoration-line: underline;
 }
 
+nav {
+  align-items: baseline;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 50px;
+  height: 220px;
+}
+
+img.navigation-pic {
+  max-width: 200px;
+  display: block;
+  transition: ease-out 250ms;
+  opacity: 1;
+}
+
+img.navigation-pic:hover {
+  opacity: 0.4;
+  max-width: 220px;
+}
+
+h4 {
+  font-size: 20px;
+  margin: 0;
+}
+
 h2 {
   font-family: "Dancing Script", cursive;
   font-size: 40px;
@@ -21,18 +48,10 @@ h2 {
 
 h3 {
   border: 4px dashed #5eaaa8;
+  border-radius: 15px;
 
-  font-size: 30px;
-  margin: 50px;
+  margin: 50px 150px;
   padding: 20px;
-}
-
-nav {
-  align-items: baseline;
-  display: flex;
-  flex-flow: row wrap;
-  margin: 50px;
-  justify-content: center;
 }
 
 div.main-content {
@@ -46,6 +65,7 @@ div.main-content {
 div.theses {
   border-radius: 80px 20px;
   box-shadow: 0px 4px 4px 2px rgba(48, 62, 78, 0.4);
+  font-weight: bold;
   transition: all 200ms ease-in-out;
   text-align: left;
   text-indent: 1em;
@@ -55,7 +75,7 @@ div.theses {
 }
 
 div.theses::first-letter {
-  color: red;
+  color: #fea450;
   font-size: 150%;
 }
 
@@ -74,4 +94,59 @@ div.theses::first-letter {
 
 div.theses:hover {
   background: #e8ded2;
+}
+
+div.video {
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #5eaaa8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div.redirection {
+  color: #5eaaa8;
+  font-size: 25px;
+  font-family: fantasy;
+  padding: 20px;
+  text-shadow: 0px 4px 6px 2px rgba(94, 170, 168, 0.5);
+}
+
+button {
+  margin: 0 auto 30px;
+  padding: 20px;
+  display: block;
+
+  transition: all 200ms ease-in-out;
+  max-width: 300px;
+
+  border: 2px solid #5eaaa8;
+  border-radius: 50px;
+  box-shadow: 0px 4px 6px 2px rgba(94, 170, 168, 0.5);
+
+  color: #e3fbf5;
+  background: #5eaaa8;
+  font-size: 40px;
+}
+
+button:hover {
+  color: #5eaaa8;
+  background: #e3fbf5;
+  border: 2px dashed #5eaaa8;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  color: #5eaaa8;
+  background: linear-gradient(#e3fbf5, #e8ded2);
+  padding: 20px;
+  border: 1px solid #e3fbf5;
+  border-radius: 10px;
 }
