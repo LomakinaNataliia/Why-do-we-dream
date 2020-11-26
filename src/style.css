@@ -24,9 +24,12 @@ nav {
   height: 220px;
 }
 
+img {
+  display: block;
+}
+
 img.navigation-pic {
   max-width: 200px;
-  display: block;
   transition: ease-out 250ms;
   opacity: 1;
 }
