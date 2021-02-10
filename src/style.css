@@ -121,8 +121,51 @@ div.redirection {
   text-shadow: 0px 4px 6px 2px rgba(94, 170, 168, 0.5);
 }
 
+footer {
+  text-align: center;
+  color: #5eaaa8;
+  background: linear-gradient(#e3fbf5, #e8ded2);
+  padding: 20px;
+  border: 1px solid #e3fbf5;
+  border-radius: 10px;
+}
+
+form {
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+  max-width: 400px;
+  text-align: left;
+}
+
+form::after {
+  content: "";
+}
+
+label {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+label.checked-wrong {
+  /* background-color: #ea4335; */
+  text-decoration: dashed line-through;
+}
+
+label.checked-right {
+  background-color: #303e4e;
+  color: #e3fbf5;
+}
+
+label.checked-right::before {
+  content: "👉🏼";
+}
+
+label.checked-right::after {
+  content: "💤";
+}
+
 button {
-  margin: 0 auto 30px;
+  margin: 30px auto;
   padding: 20px;
   display: block;
 
@@ -131,25 +174,16 @@ button {
 
   border: 2px solid #5eaaa8;
   border-radius: 50px;
-  box-shadow: 0px 4px 6px 2px rgba(94, 170, 168, 0.5);
+  box-shadow: 0px 5px 15px 5px rgba(94, 170, 168, 0.5);
 
   color: #e3fbf5;
   background: #5eaaa8;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 button:hover {
   color: #5eaaa8;
-  background: #e3fbf5;
-  border: 2px dashed #5eaaa8;
+  background: transparent;
+  border: 2px solid #5eaaa8;
   cursor: pointer;
-}
-
-footer {
-  text-align: center;
-  color: #5eaaa8;
-  background: linear-gradient(#e3fbf5, #e8ded2);
-  padding: 20px;
-  border: 1px solid #e3fbf5;
-  border-radius: 10px;
 }
