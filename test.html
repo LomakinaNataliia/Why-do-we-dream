@@ -26,65 +26,104 @@
         <h1 style="text-decoration: none;">We are sorry, this page is under construction currently. Hope we'll see you again!<br>
         To come back to <a href="index.html"> the Homepage <i class="fas fa-external-link-alt"></i></a></h1> -->
 
-      <h3>Answer a couple of questions to see if you have a lack of sleep</h3>
+      <h3>
+        Answer a couple of questions to see if you have a lack of sleep
+        <span class="question-mark">?</span>
+      </h3>
 
       <div>
-        <h2>Question 1</h2>
+        <h2>What is sleep debt?</h2>
         <form>
+          <input type="radio" name="answer" id="check" />
+          <label class="wrong"
+            >The money, you borrowed when you were sleep-walking</label
+          ><br />
+
           <input type="radio" name="answer" />
-          <label class="wrong">Wrong Answer</label><br />
+          <label class="right"
+            >The total sleep lost during a particular time. </label
+          ><br />
           <input type="radio" name="answer" />
-          <label class="wrong">Wrong Answer</label><br />
-          <input type="radio" name="answer" />
-          <label class="right">Right Answer</label><br />
-          <input type="radio" name="answer" />
-          <label class="wrong">Wrong Answer</label><br />
+          <label class="wrong"
+            >The debt that has not been provided for a fixed percentage.</label
+          ><br />
         </form>
       </div>
 
       <div>
-        <h2>Question 2</h2>
+        <h2>Does it matter at what time you fall asleep?</h2>
         <form>
           <input type="radio" name="answer" />
-          <label class="wrong">Wrong Answer</label><br />
+          <label class="wrong"
+            >It doesn’t matter at what exact time you are preparing for the
+            sleep as far as you get enough hours of sleep in total.</label
+          ><br />
           <input type="radio" name="answer" />
-          <label class="wrong">Wrong Answer</label><br />
+          <label class="wrong"
+            >Midnight is a very important time for our brain, so it is
+            preferable to be asleep exactly at this time. </label
+          ><br />
           <input type="radio" name="answer" />
-          <label class="right">Right Answer</label><br />
-          <input type="radio" name="answer" />
-          <label class="wrong">Wrong Answer</label><br />
+          <label class="right"
+            >Our body clock is in sync with the environment − light, darkness,
+            and other cues help determine when you feel awake and when you feel
+            drowsy. </label
+          ><br />
         </form>
       </div>
 
       <div>
-        <h2>Question 3</h2>
+        <h2>Does sleep help your brain work properly?</h2>
         <form>
           <input type="radio" name="answer" />
-          <label class="wrong">Wrong Answer</label><br />
+          <label class="right"
+            >Good sleep can maximize problem-solving skills and enhance memory. </label
+          ><br />
           <input type="radio" name="answer" />
-          <label class="wrong">Wrong Answer</label><br />
+          <label class="wrong"
+            >Good sleep has been shown to impair brain function.</label
+          ><br />
           <input type="radio" name="answer" />
-          <label class="right">Right Answer</label><br />
-          <input type="radio" name="answer" />
-          <label class="wrong">Wrong Answer</label><br />
+          <label class="wrong"
+            >Good sleep constraints improvement concentration and productivity. </label
+          ><br />
         </form>
       </div>
 
       <div>
-        <h2>Question 4</h2>
+        <h2>How does it affect the appearance?</h2>
         <form>
           <input type="radio" name="answer" />
-          <label class="wrong">Wrong Answer</label><br />
+          <label class="right"
+            >Getting quality sleep is crucial for losing weight.</label
+          ><br />
+
           <input type="radio" name="answer" />
-          <label class="wrong">Wrong Answer</label><br />
+          <label class="wrong"
+            >Poor sleep is linked to higher body weight.</label
+          ><br />
           <input type="radio" name="answer" />
-          <label class="right">Right Answer</label><br />
+          <label class="wrong">People, who sleep less − weigh less.</label
+          ><br />
+        </form>
+      </div>
+      <div>
+        <h2>Which sleep routine is more helpful to avoid sleep deprivation?</h2>
+        <form>
           <input type="radio" name="answer" />
-          <label class="wrong">Wrong Answer</label><br />
+          <label class="wrong"
+            >Having an everyday nap at a particular time.</label
+          ><br />
+          <input type="radio" name="answer" />
+          <label class="wrong">Having extra sleep on days off.</label><br />
+          <input type="radio" name="answer" />
+          <label class="right"
+            >Going to bed and wake up at the same time every day</label
+          ><br />
         </form>
       </div>
 
-      <button id="check">Submit Answers</button>
+      <!-- <button id="check">Submit Answers</button> -->
     </div>
   </body>
   <script src="src/app.js"></script>

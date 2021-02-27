@@ -46,6 +46,7 @@ h4 {
 
 h2 {
   font-family: "Dancing Script", cursive;
+
   font-size: 40px;
 }
 
@@ -130,16 +131,32 @@ footer {
   border-radius: 10px;
 }
 
+h3 {
+  position: relative;
+}
+
+span.question-mark {
+  font-family: "Teko", sans-serif;
+  position: absolute;
+  top: 16px;
+  left: 713px;
+}
+
+span.question-mark:hover {
+  color: #fea450;
+  cursor: pointer;
+}
+
 form {
   margin: 0 auto;
   padding: 0 0 20px 0;
-  max-width: 400px;
+  max-width: 900px;
   text-align: left;
 }
-
+/* 
 form::after {
   content: "";
-}
+} */
 
 label {
   font-size: 20px;
