@@ -44,7 +44,13 @@ function checkAnswers() {
     // wrongAnswer[index].className += " checked-wrong";
     wrongAnswer[index].classList.add("checked-wrong");
   }
+
+  //showExplanation();
 }
+
+//function showExplanation(){
+
+//}
 
 var rightAnswer = document.getElementsByClassName("right");
 var wrongAnswer = document.getElementsByClassName("wrong");

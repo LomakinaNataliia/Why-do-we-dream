@@ -181,6 +181,22 @@ label.checked-right::after {
   content: "💤";
 }
 
+div.explanation {
+  border: 4px dashed #5eaaa8;
+  border-radius: 15px;
+
+  margin: 50px 150px;
+  padding: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+  text-indent: 2em;
+}
+
 button {
   margin: 30px auto;
   padding: 20px;
