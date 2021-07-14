@@ -31,9 +31,15 @@ function showQuestion() {
     document.getElementById("question4").style.display = "block";
   } else if (document.getElementById("question4").style.display == "block") {
     document.getElementById("question4").style.display = "none";
+    nextQuestion.style.display = "none";
     document.getElementById("question5").style.display = "block";
+    finishTest.style.display = "block";
   } else {
     document.getElementById("question5").style.display = "none";
+    document.getElementById("next").style.display = "none";
+    document.getElementById("header1").style.display = "none";
+    finishTest.style.display = "none";
+    document.getElementById("conclusion").style.display = "block";
   }
 }
 
@@ -79,3 +85,6 @@ for (let i = 0; i < checkButton.length; i++) {
 
 let nextQuestion = document.querySelector("#next");
 nextQuestion.addEventListener("click", click);
+
+let finishTest = document.querySelector("#finish");
+finishTest.addEventListener("click", click);
