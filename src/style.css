@@ -135,16 +135,45 @@ h3 {
   position: relative;
 }
 
-span.question-mark {
+span.pop-up {
   font-family: "Teko", sans-serif;
   position: absolute;
   top: 16px;
   left: 713px;
 }
 
-span.question-mark:hover {
+/* span.question-mark:hover {
   color: #fea450;
   cursor: pointer;
+} */
+
+a[data-tool-tip] {
+  position: relative;
+}
+
+a[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  /* left: 40%; */
+  white-space: nowrap;
+
+  background: rgb(94, 170, 168, 0.7);
+  border-radius: 5px;
+  color: #e3fbf5;
+  /* color: #303e4e; */
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75em;
+  padding: 0.2em 0.5em;
+
+  transform: scale(0);
+  transition: transform ease-out 200ms, bottom ease-out 200ms;
+}
+
+a[data-tool-tip]:hover::after {
+  transform: scale(1);
+  bottom: 100%;
 }
 
 form {
@@ -195,6 +224,7 @@ p {
   margin: 0;
   text-align: left;
   text-indent: 2em;
+  position: relative;
 }
 
 button {
