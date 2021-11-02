@@ -23,17 +23,20 @@ function showQuestion() {
   if (document.getElementById("question1").style.display == "block") {
     document.getElementById("question1").style.display = "none";
     document.getElementById("question2").style.display = "block";
+    document.getElementById("next").style.display = "none";
   } else if (document.getElementById("question2").style.display == "block") {
     document.getElementById("question2").style.display = "none";
     document.getElementById("question3").style.display = "block";
+    document.getElementById("next").style.display = "none";
   } else if (document.getElementById("question3").style.display == "block") {
     document.getElementById("question3").style.display = "none";
     document.getElementById("question4").style.display = "block";
+    document.getElementById("next").style.display = "none";
   } else if (document.getElementById("question4").style.display == "block") {
     document.getElementById("question4").style.display = "none";
     nextQuestion.style.display = "none";
     document.getElementById("question5").style.display = "block";
-    finishTest.style.display = "block";
+    // finishTest.style.display = "block";
   } else {
     document.getElementById("question5").style.display = "none";
     document.getElementById("next").style.display = "none";
@@ -63,14 +66,19 @@ function checkAnswers() {
 function showExplanation() {
   if (document.getElementById("question1").style.display == "block") {
     document.getElementById("explanation1").style.display = "block";
+    document.getElementById("next").style.display = "block";
   } else if (document.getElementById("question2").style.display == "block") {
     document.getElementById("explanation2").style.display = "block";
+    document.getElementById("next").style.display = "block";
   } else if (document.getElementById("question3").style.display == "block") {
     document.getElementById("explanation3").style.display = "block";
+    document.getElementById("next").style.display = "block";
   } else if (document.getElementById("question4").style.display == "block") {
     document.getElementById("explanation4").style.display = "block";
+    document.getElementById("next").style.display = "block";
   } else {
     document.getElementById("explanation5").style.display = "block";
+    finishTest.style.display = "block";
   }
 }
 
