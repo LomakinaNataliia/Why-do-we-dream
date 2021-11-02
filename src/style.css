@@ -24,19 +24,20 @@ nav {
   height: 220px;
 }
 
-img {
+/* img {
   display: block;
-}
+} */
 
 img.navigation-pic {
   max-width: 200px;
   transition: ease-out 250ms;
-  opacity: 1;
+  opacity: 0.4;
+  /* opacity: 1; */
 }
 
 img.navigation-pic:hover {
-  opacity: 0.4;
-  max-width: 220px;
+  /* opacity: 0.4; */
+  opacity: 1;
 }
 
 h4 {
@@ -46,7 +47,6 @@ h4 {
 
 h2 {
   font-family: "Dancing Script", cursive;
-
   font-size: 40px;
 }
 
